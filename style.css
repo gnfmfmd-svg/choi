@@ -109,7 +109,7 @@ nav a:hover {
 
 .about-details {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
@@ -135,6 +135,12 @@ nav a:hover {
     gap: 10px;
 }
 
+.about-card ol {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
 .about-card li {
     font-size: 14px;
     color: #595E70;
@@ -146,7 +152,7 @@ nav a:hover {
     content: "•";
     position: absolute;
     left: 0;
-    color: #3d5a4c;
+    color: #4b3d5a;
 }
 
 /* Project Section */
@@ -197,6 +203,32 @@ nav a:hover {
     background-color: #fff;
 }
 
+.project-info {
+    padding: 16px 20px 24px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.project-role {
+    font-size: 14px;
+    font-weight: 600;
+    color: #3A3845;
+    margin-bottom: 8px;
+}
+
+.project-contribution {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.project-role strong {
+    color: #4A4D65;
+}
+.project-item:hover .project-info {
+    background-color: #F6F7F9;
+}
+
 /* Contact Section */
 .contact {
     padding: 80px 60px;
@@ -210,6 +242,10 @@ nav a:hover {
     color: #3A3845;
     font-weight: 700;
     
+}
+
+.contact-cta {
+    text-align: center;
 }
 
 .contact-container {
@@ -248,6 +284,19 @@ nav a:hover {
     position: absolute;
     left: 0;
     color: #4A4C65;
+}
+
+.about-card ol {
+    list-style: decimal;
+    padding-left: 0px;
+}
+
+.about-card ol li {
+    padding-left: 0;
+}
+
+.about-card ol li::before {
+    content: none;
 }
 
 .contact-item a {
